@@ -5,6 +5,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import './App.css';
 
 const App: React.FC = () => {
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

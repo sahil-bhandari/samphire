@@ -43,11 +43,11 @@
   padding: 5px 0;
   transition: color 0.3s ease, font-size 0.3s ease;
   font-size: 18px;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .navbar a::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -64,4 +64,18 @@
 
 .navbar a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar li {
+    margin: 5px 7px; /* Adjust margin for better spacing */
+  }
+
+  .navbar .logo {
+    width: 40px; /* Decrease logo size */
+  }
+
+  .navbar a {
+    font-size: 16px; /* Decrease font size for links */
+  }
 }
