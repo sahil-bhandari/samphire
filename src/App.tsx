@@ -5,6 +5,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import './App.css';
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/samphire" element={<Home />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

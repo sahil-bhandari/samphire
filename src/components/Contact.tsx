@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Import FontAwesome icons as needed
+import { faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Import FontAwesome icons as needed
 import "../css/Contact.css"
 
 
 const Contact: React.FC = () => {
     return (
-        <div>
+        <div className='contacts'> 
             <h1>Contact Us</h1>
             <p>Feel free to reach out with any questions or to schedule an appointment.</p>
 
@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
             <div className="row">
                 <div className="contact">
                     <div>
-                        <FontAwesomeIcon icon={faHome} />
+                        <FontAwesomeIcon icon={faLocationDot} />
                         <h5>Gharse Towers, opposite Don Bosco School, Panaji, Goa</h5>
                     </div>
                     <div>
@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                         <FontAwesomeIcon icon={faEnvelope} />
-                        <h5>test@gmail.com</h5>
+                        <h5>samphirespa@gmail.com</h5>
                     </div>
                 </div>
             </div>

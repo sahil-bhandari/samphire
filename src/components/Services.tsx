@@ -5,7 +5,7 @@ const Services: React.FC = () => {
   return (
     <div>
       <section className="services-section">
-        <h2>Our Services</h2>
+        <h1>Our Services</h1>
         <div className="service-cards">
           <div className="service-card">
             <h3>Hair Care</h3>

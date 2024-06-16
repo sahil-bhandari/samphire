@@ -1,9 +1,25 @@
+.contacts {
+  background-color: transparent;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contacts h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
 .contact {
   width: 100%;
   display: flex;
   justify-content: space-around;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .contact div {
