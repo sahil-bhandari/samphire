@@ -1,0 +1,44 @@
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.contact div {
+  display: flex;
+  align-items: center;
+}
+
+.contact h5 {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 5px;
+}
+
+/* Adjust for screens smaller than 1000px */
+@media (max-width: 1000px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text on smaller screens */
+  }
+  .contact h5 {
+    font-size: 18px; /* Slightly reduce the font size */
+  }
+}
+
+/* Further adjustments for screens smaller than 600px (mobile devices) */
+@media (max-width: 600px) {
+  .contact {
+    margin-top: 50px;
+  }
+  .contact h5 {
+    font-size: 16px; /* Further reduce the font size */
+  }
+  .contact p {
+    font-size: 14px; /* Adjust paragraph font size if necessary */
+  }
+}
