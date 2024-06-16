@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/samphire/static/css/main.57618340.css",
-    "main.js": "/samphire/static/js/main.8029bae8.js",
+    "main.js": "/samphire/static/js/main.ec4dccfe.js",
     "static/js/453.8ea4f4b5.chunk.js": "/samphire/static/js/453.8ea4f4b5.chunk.js",
     "static/media/image1.png": "/samphire/static/media/image1.f9a289f664832ee578a8.png",
     "static/media/samphirelogo.png": "/samphire/static/media/samphirelogo.241fe058547c7bec10ad.png",
@@ -18,11 +18,11 @@
     "static/media/slick.woff": "/samphire/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/samphire/index.html",
     "main.57618340.css.map": "/samphire/static/css/main.57618340.css.map",
-    "main.8029bae8.js.map": "/samphire/static/js/main.8029bae8.js.map",
+    "main.ec4dccfe.js.map": "/samphire/static/js/main.ec4dccfe.js.map",
     "453.8ea4f4b5.chunk.js.map": "/samphire/static/js/453.8ea4f4b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57618340.css",
-    "static/js/main.8029bae8.js"
+    "static/js/main.ec4dccfe.js"
   ]
 }
