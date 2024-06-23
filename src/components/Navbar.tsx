@@ -5,7 +5,7 @@ import logo from '../assets/samphirelogo.png';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
-  const isHome = location.pathname === '/' || location.pathname === '/samphire';
+  const isHome = (location.pathname === '/' || location.pathname === '/samphire');
   return (
     <nav className={`navbar ${isHome ? 'navbar-home' : ''}`}>
       <img src={logo} alt="Salon Logo" className="logo" />
