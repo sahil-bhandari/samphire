@@ -1,5 +1,5 @@
 .about-container {
-  background-color: transparent;
+  background-color: var(--background-color);
   max-width: 800px;
   margin: 0 auto;
   margin-top: 50px;

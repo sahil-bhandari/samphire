@@ -1,18 +1,31 @@
 :root {
-  --primary-color: #a28757; /* Gold */
+  --primary-color: #6d5938; /* Gold */
   --secondary-color: #edead7; /* Beige */
   --text-color: #333; /* Dark text color for contrast */
-  --background-color: #fff; /* Background color for sections */
+  --background-color: #ffffff00; /* Background color for sections */
 }
 
-body {
-  background-color: var(--secondary-color);
+/* body {
+  background: radial-gradient(var(--primary-color),var(--secondary-color));
   color: var(--text-color);
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   transition: background-color 0.3s ease;
+} */
+
+body{
+  background-image: url('../assets/back2.png');
+  background-size: cover; /* Adjust to fit your needs */
+  background-position: center; /* Adjust to fit your needs */
+  /* Other styles remain the same */
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,5 +48,3 @@ a {
   margin: 0 auto;
   padding: 20px;
 }
-
-

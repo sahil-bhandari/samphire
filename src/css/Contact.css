@@ -1,5 +1,5 @@
 .contacts {
-  background-color: transparent;
+  background-color: var(--background-color);
   max-width: 100%;
   margin: 0 auto;
   margin-top: 50px;
@@ -15,11 +15,8 @@
 }
 
 .contact {
-  width: 100%;
   display: flex;
   justify-content: space-around;
-  text-align: left;
-  margin-top: 10px;
 }
 
 .contact div {
@@ -34,6 +31,11 @@
   padding: 5px;
 }
 
+.contact-box:hover,
+.hours-box:hover {
+  transform: scale(1.05);
+}
+
 /* Adjust for screens smaller than 1000px */
 @media (max-width: 1000px) {
   .contact {
@@ -41,7 +43,7 @@
     align-items: center;
     text-align: center; /* Center text on smaller screens */
   }
-  
+
   .contact h5 {
     font-size: 14px; /* Slightly reduce the font size */
   }

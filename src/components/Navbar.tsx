@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../css/Navbar.css';
 import logo from '../assets/samphirelogo.png';
 
 const Navbar: React.FC = () => {
-  const location = useLocation();
-  const isHome = (location.pathname === '/' || location.pathname === '/samphire');
   return (
-    <nav className={`navbar ${isHome ? 'navbar-home' : ''}`}>
+    <nav className={`navbar`}>
       <img src={logo} alt="Salon Logo" className="logo" />
       <ul>
         <li><Link to="/">Home</Link></li>

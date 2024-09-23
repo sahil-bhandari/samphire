@@ -1,0 +1,53 @@
+.contact-section {
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  .contact-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .contact-box {
+    width: 30%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--text-color);
+    box-shadow: 3px 3px 6px rgb(0 0 0 / 10%);
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-box a {
+    display: block;
+    margin-top: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media query for tablets (below 768px) */
+  @media (max-width: 768px) {
+    .contact-options {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-box {
+      width: 70%;
+      margin-bottom: 20px; /* Adds space between the boxes */
+    }
+  }
+  
+  /* Media query for mobile phones (below 480px) */
+  @media (max-width: 480px) {
+    .contact-box {
+      width: 90%; /* Full width on small screens */
+    }
+  }
+  

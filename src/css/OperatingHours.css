@@ -1,0 +1,47 @@
+.operating-hours {
+  background-color: transparent;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.hours-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hours-box {
+  width: 30%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: 4px solid var(--text-color);
+  box-shadow: 3px 3px 6px rgb(0 0 0 / 10%);
+  transition: transform 0.3s ease;
+}
+
+/* Media query for tablets (below 768px) */
+@media (max-width: 768px) {
+  .hours-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hours-box {
+    width: 70%; /* Increase the width to 70% on tablets */
+    margin-bottom: 20px; /* Add spacing between the boxes */
+  }
+}
+
+/* Media query for mobile phones (below 480px) */
+@media (max-width: 480px) {
+  .hours-box {
+    width: 90%; /* Make the boxes take up more width on mobile */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  /* Adjust text sizes for better readability on smaller screens */
+  .hours-box p {
+    font-size: 14px;
+  }
+}

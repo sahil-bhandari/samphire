@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import '../css/Home.css';
@@ -6,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 // Sample images, replace these with actual images
 import image1 from '../assets/image1.png';
-import image2 from '../assets/image.jpg';
+import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.png';
 import image4 from '../assets/image4.jpg';
 import mobile1 from '../assets/mobile4.jpg';
@@ -25,28 +26,28 @@ const Home: React.FC = () => {
         autoplaySpeed: 1800,
     };
 
-    const [images, setImages] = useState({
-        imageA: image1,
-        imageB: image2,
-        imageC: image3,
-        imageD: image4,
-    });
+    const [images, setImages] = useState([
+        image1,
+        image2,
+        image3,
+        image4,
+    ]);
 
     const updateImages = () => {
         if (window.innerWidth <= 600) {
-            setImages({
-                imageA: mobile1,
-                imageB: mobile2,
-                imageC: mobile3,
-                imageD: mobile4,
-            });
+            setImages([
+                mobile1,
+                mobile2,
+                mobile3,
+                mobile4,
+            ]);
         } else {
-            setImages({
-                imageA: image1,
-                imageB: image2,
-                imageC: image3,
-                imageD: image4,
-            });
+            setImages([
+                image1,
+                image2,
+                image3,
+                image4,
+            ]);
         }
     };
 
@@ -59,10 +60,11 @@ const Home: React.FC = () => {
     return (
         <div className="home-container">
             <Slider {...sliderSettings} className="image-slider">
-                <div><img src={images.imageA} alt="Highlight 1" /></div>
-                <div><img src={images.imageB} alt="Highlight 2" /></div>
-                <div><img src={images.imageC} alt="Highlight 3" /></div>
-                <div><img src={images.imageD} alt="Highlight 4" /></div>
+                {images.map((image, index) => (
+                    <div key={index}>
+                        <img src={image} />
+                    </div>
+                ))}
             </Slider>
 
             <section className="intro-section">
