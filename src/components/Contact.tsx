@@ -19,7 +19,6 @@ const Contact: React.FC = () => {
             {/* Map ( using iframe, replace with your actual map component) */}
             <div>
                 <iframe title="Samphire" width="100%" height="320px" style={{ border: 0 }} loading="lazy" allowFullScreen={false} referrerPolicy="no-referrer-when-downgrade" frameBorder="0" scrolling="no" src="https://maps.google.com/maps?width=617&amp;height=400&amp;hl=en&amp;q=Samphire Salon And Spa&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-
             </div>
         </div>
 

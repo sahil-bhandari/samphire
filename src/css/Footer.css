@@ -4,6 +4,9 @@
   width: 100%;
   position: fixed;
   bottom: 0;
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 1s forwards; 
 }
 
 .footer-content p {
@@ -20,4 +23,11 @@
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }

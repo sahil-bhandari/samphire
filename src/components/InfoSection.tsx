@@ -5,9 +5,9 @@ import {
   faLocationDot,
   faPhone,
   faEnvelope,
-} from "@fortawesome/free-solid-svg-icons"; // Import FontAwesome icons as needed
+} from "@fortawesome/free-solid-svg-icons";
 
-const InfoSection = () => {
+const InfoSection: React.FC = () => {
   return (
     <section className="contact-section">
       <div className="row"></div>
