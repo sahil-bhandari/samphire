@@ -1,20 +1,21 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../css/Navbar.css';
+import '../css/Theme.css';
 import logo from '../assets/samphirelogo.png';
+import { scrollToSection } from '../util/scroll';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className={`navbar`}>
+    <nav className="navbar">
       <img src={logo} alt="Salon Logo" className="logo" />
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/services">Services</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li><a onClick={() => scrollToSection('hero')} className="nav-link" role="button">Home</a></li>
+        <li><a onClick={() => scrollToSection('services')} className="nav-link" role="button">Services</a></li>
+        <li><a onClick={() => scrollToSection('about')} className="nav-link" role="button">About</a></li>
+        <li><a onClick={() => scrollToSection('contact')} className="nav-link" role="button">Contact</a></li>
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
