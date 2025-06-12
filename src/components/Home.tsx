@@ -92,6 +92,30 @@ const Home: React.FC = () => {
         }
     ];
 
+    const contactItems = [
+        {
+            icon: faLocationDot,
+            title: "Visit Us",
+            content: "Gharse Towers, opposite Don Bosco School, Panaji, Goa",
+            isLink: false,
+        },
+        {
+            icon: faPhone,
+            title: "Call Us",
+            content: "+91 7057551122",
+            isLink: true,
+            href: "tel:+917057551122",
+        },
+        {
+            icon: faEnvelope,
+            title: "Email Us",
+            content: "samphirespa@gmail.com",
+            isLink: true,
+            href: "mailto:samphirespa@gmail.com",
+        },
+    ];
+
+
     const sliderSettings = {
         dots: true,
         infinite: true,
@@ -259,15 +283,10 @@ const Home: React.FC = () => {
                                         <div className="service-content">
                                             <h3 className="service-title">{service.title}</h3>
                                             <p className="service-description">{service.description}</p>
-                                            <ul className="service-features">
-                                                {service.features.map((feature, idx) => (
-                                                    <li key={idx}>{feature}</li>
-                                                ))}
-                                            </ul>
-                                            <button className="service-btn" aria-label={`Learn more about ${service.title}`}>
-                                                Learn More
-                                            </button>
                                         </div>
+                                        <button className="service-btn" aria-label={`Learn more about ${service.title}`}>
+                                            Learn More
+                                        </button>
                                     </div>
                                 </div>
                             </article>
@@ -382,34 +401,24 @@ const Home: React.FC = () => {
 
                     <div className="contact-grid">
                         <div className="contact-info">
-                            <div className="contact-card">
-                                <div className="contact-icon">
-                                    <FontAwesomeIcon icon={faLocationDot} />
-                                </div>
-                                <div className="contact-details">
-                                    <h3>Visit Us</h3>
-                                    <p>Gharse Towers, opposite Don Bosco School, Panaji, Goa</p>
-                                </div>
-                            </div>
-
-                            <div className="contact-card">
-                                <div className="contact-icon">
-                                    <FontAwesomeIcon icon={faPhone} />
-                                </div>
-                                <div className="contact-details">
-                                    <h3>Call Us</h3>
-                                    <a href="tel:+917057551122" className="contact-link">+91 7057551122</a>
-                                </div>
-                            </div>
-
-                            <div className="contact-card">
-                                <div className="contact-icon">
-                                    <FontAwesomeIcon icon={faEnvelope} />
-                                </div>
-                                <div className="contact-details">
-                                    <h3>Email Us</h3>
-                                    <a href="mailto:samphirespa@gmail.com" className="contact-link">samphirespa@gmail.com</a>
-                                </div>
+                            <div className="contact-info">
+                                {contactItems.map((item, index) => (
+                                    <div className="contact-card" key={index}>
+                                        <div className="contact-icon">
+                                            <FontAwesomeIcon icon={item.icon} />
+                                        </div>
+                                        <div className="contact-details">
+                                            <h3>{item.title}</h3>
+                                            {item.isLink ? (
+                                                <a href={item.href} className="contact-link">
+                                                    {item.content}
+                                                </a>
+                                            ) : (
+                                                <p>{item.content}</p>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
 
